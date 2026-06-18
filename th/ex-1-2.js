@@ -10,6 +10,16 @@
 */
 
 // Start coding here
+function findIfProductsExist(products, targetProduct) {
+    let foundIndex = -1;
+    for(let index in products) {
+        if(products[index].name === targetProduct) {
+            foundIndex = index;
+            break;
+        }
+    }
+    return foundIndex;
+};
 
 const products = [
   { id: 2, name: "Desk Chair", price: 300, category: "Furniture", zone: "C" },
